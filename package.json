@@ -1,0 +1,36 @@
+{
+  "name": "make-my-marriage",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "tsx --conditions=react-server --test tests/*.test.ts",
+    "db:check": "tsx --conditions=react-server scripts/check-db.ts"
+  },
+  "dependencies": {
+    "@next/env": "16.3.8",
+    "mongoose": "9.10.4",
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.8",
+    "prettier": "3.9.9",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3"
+  }
+}
